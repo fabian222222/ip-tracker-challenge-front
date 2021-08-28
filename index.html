@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/7806c1eb76.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+
+    <section class="map_section">
+        <div class="information_container">
+            
+            <div class="map_section_container">
+
+                <div class="map_section_container_background">
+                    <img src="/images/pattern-bg.png" alt="map section information background image">
+                </div>
+    
+                <div class="map_section_information">   
+    
+                    <div class="map_section_information_title">
+                        <p class="map_section_information_title_text">IP Address Tracker</p>
+                    </div>
+    
+                    <div class="map_section_information_search_container">
+                        <input type="text" name="IP_Address" class="map_section_information_search_container_input" placeholder="Search for any IP address or domain">
+                        <div class="map_section_information_search_arrow_container">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+    
+                    <div class="map_section_information_datas">
+    
+                        <div class="map_section_information_datas_ip">
+                            <p class="map_section_information_datas_title">IP ADDRESS</p>
+                            <p class="map_section_information_datas_data ip"></p>
+                        </div>
+
+                        <div class="map_section_information_datas_separator">
+                        </div>
+    
+                        <div class="map_section_information_datas_location">
+                            <p class="map_section_information_datas_title">LOCATION</p>
+                            <p class="map_section_information_datas_data location"></p>
+                        </div>
+
+                        <div class="map_section_information_datas_separator">
+                        </div>
+    
+                        <div class="map_section_information_datas_timezone">
+                            <p class="map_section_information_datas_title">TIMEZONE</p>
+                            <p class="map_section_information_datas_data timezone"></p>
+                        </div>
+
+                        <div class="map_section_information_datas_separator">
+                        </div>
+    
+                        <div class="map_section_information_datas_isp">
+                            <p class="map_section_information_datas_title">ISP</p>
+                            <p class="map_section_information_datas_data isp"></p>
+                        </div>
+    
+                    </div>
+    
+                </div>  
+
+            </div>
+
+            <div id="map_container"></div>
+
+        </div>
+    </section>
+
+</body>
+</html>
